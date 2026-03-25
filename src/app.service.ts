@@ -1,17 +1,19 @@
 import { Injectable } from '@nestjs/common';
-import { ApiResponse } from 'src/interfaces/response.interface'
+import { ApiResponse } from 'src/interfaces/response.interface';
 
 @Injectable()
 export class AppService {
-
-  getHello():ApiResponse<object> {
+  getHello():ApiResponse<{
+      service:string
+      version:string
+  }>{
     return {
       success: true,
       data: {
         service: 'purchase-api',
-        version: '1.0.0'
+        version: '1.0.0',
       },
-      message: 'Hello NestJS'
+      message: 'Hello NestJS',
     };
   }
 }
