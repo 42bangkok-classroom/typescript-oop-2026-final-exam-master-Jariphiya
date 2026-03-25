@@ -7,7 +7,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get() 
-  getHello():ApiResponse<{service:string; version:string}>{
+  getHello(){
     return this.appService.getHello()
   }
 }
