@@ -1,17 +1,11 @@
 import { Injectable } from '@nestjs/common';
-
+import { ApiResponse } from 'src/interfaces/response.interface'
 
 @Injectable()
 export class AppService {
-  getHello():{
-    success: Boolean,
-    data: {
-      service: String,
-      version: String
-    },
-    message: String
-  }
-  {return {
+
+  getHello():ApiResponse<object> {
+    return {
       success: true,
       data: {
         service: 'purchase-api',
