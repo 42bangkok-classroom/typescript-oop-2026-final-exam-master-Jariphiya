@@ -5,12 +5,12 @@ import { ApiResponse } from 'src/interfaces/response.interface';
 export class AppService {
   getHello():ApiResponse<{service:string; version:string}>{
     return{
-      "success": true,
-      "data": {
-        "service": "purchase-api",
-        "version": "1.0.0"
+      'success': true,
+      'data': {
+        'service': "purchase-api",
+        'version': "1.0.0"
       },
-      "message": "Hello NestJS"
+      'message': "Hello NestJS"
   }
 }
 }

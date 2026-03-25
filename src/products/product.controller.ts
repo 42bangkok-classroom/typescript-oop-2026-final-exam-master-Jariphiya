@@ -7,12 +7,12 @@ import { Product } from './product.interface';
 export class ProductController {
   constructor(private readonly ProductService: ProductService) {}
 
-  @Get()
-  findAll():ApiResponse<Product>{
-      return {
-        //   sucesss: true,
-        //   data: this.ProductService.findAll(),
-        //   message: 'Fetched products sucessfully'
-      }
-  }
+//   @Get()
+//   findAll():ApiResponse<Product>{
+//       return {
+//         //   sucesss: true,
+//         //   data: this.ProductService.findAll(),
+//         //   message: 'Fetched products sucessfully'
+//       }
+//   }
 }
