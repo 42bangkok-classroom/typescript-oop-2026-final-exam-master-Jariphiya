@@ -3,17 +3,11 @@ import { ApiResponse } from 'src/interfaces/response.interface';
 
 @Injectable()
 export class AppService {
-  getHello():ApiResponse<{
-      service:string
-      version:string
-  }>{
+  getHello(){
     return {
-      success: true,
-      data: {
-        service: 'purchase-api',
-        version: '1.0.0',
-      },
-      message: 'Hello NestJS',
+      service: 'purchase-api',
+          version: '1.0.0',
     };
   }
 }
+
